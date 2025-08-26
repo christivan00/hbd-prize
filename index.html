@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- kalau kamu punya style.css, aktifkan ini -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+
     <style>
         body {
-        background-color: rgb(252, 210, 230);
+        background-color: rgb(255, 223, 239);
         margin: 20px;
         padding: 1px;
         }
+
+        a {
+        text-decoration: none; 
+        color: inherit;      
+        }
+
 
         .chard {
         display: flex;
@@ -21,10 +26,17 @@
 
         .ssp {
         height: auto;
-        background-color: rgb(251, 125, 146);
+        background-color: rgb(250, 152, 168);
         text-align: center;
         color: white;
+        border-radius: 12px;
         }
+
+        .ssp:active {
+        transform: scale(0.9);   /* mengecil sedikit */
+        background-color: rgb(255, 98, 137); /* warna lebih gelap */
+        }
+
 
         .judul {
         height: 50px;
@@ -46,17 +58,33 @@
             background-color: lightblue;
             }
         }
+        footer {
+        margin-top: 60px;
+        padding: 1px;
+        text-align: center;
+        background-color: rgba(28, 28, 28, 0.127);
+        color: white;
+        border-radius: 12px;
+        font-size: 15px;
+        }
+
     </style>
     </head>
 
     <body>
     <div class="chard">
         <div class="gambar">
-        <img src="AULIA.png" alt="hbd CHARD">
+            <img src="AULIA.png" alt="hbd CHARD">
         </div>
-        <div class="ssp">
-        <h2>Ambil Hadiah </h2>
-        </div>
+        <a href="https://example.com" target="_blank">
+            <div class="ssp">
+                <h1>surprise!</h1>
+            </div>
+        </a>
     </div>
+
+    <footer>
+        <p>by christivan | Dibuat dengan ❤️</p>
+    </footer>
 </body>
 </html>
