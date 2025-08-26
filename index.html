@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- kalau kamu punya style.css, aktifkan ini -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+        background-color: rgb(252, 210, 230);
+        margin: 20px;
+        padding: 1px;
+        }
+
+        .chard {
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+        .ssp {
+        height: auto;
+        background-color: rgb(251, 125, 146);
+        text-align: center;
+        color: white;
+        }
+
+        .judul {
+        height: 50px;
+        text-align: center;
+        }
+
+        img {
+        max-width: 100%; /* jangan lebih lebar dari layar */
+        height: auto;    /* tinggi menyesuaikan biar nggak gepeng */
+        display: block;
+        margin: 0 auto;
+        }
+
+        @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 414px)
+        and (orientation: portrait) {
+            body {
+            background-color: lightblue;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+    <div class="chard">
+        <div class="gambar">
+        <img src="AULIA.png" alt="hbd CHARD">
+        </div>
+        <div class="ssp">
+        <h2>Ambil Hadiah </h2>
+        </div>
+    </div>
+</body>
+</html>
