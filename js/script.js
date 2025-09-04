@@ -6,8 +6,7 @@ function openSurprise() {
         // Play musik
         document.getElementById("bg-music").play();
 
-        // Efek confetti
-        let duration = 3 * 1000; // 3 detik
+        let duration = 3 * 1000; 
         let end = Date.now() + duration;
 
         (function frame() {

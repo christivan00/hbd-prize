@@ -1,11 +1,17 @@
 body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #ffdadc, #f7e6e0, #e3eeff, #d6eaf3, #f5e1c8, #edf7d5);
+    background-size: 1200% 1200%;
+    animation: hologram 20s ease infinite;
+}
 
-    background-color: rgb(246, 242, 244);
-    margin: 20px;
-    padding: 1px;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    }
+@keyframes hologram {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 a {
     text-decoration: none; 
@@ -50,12 +56,13 @@ footer {
     padding: 1px;
     text-align: center;
     background-color: rgba(28, 28, 28, 0.127);
-    color: white;
+    color: rgb(107, 107, 107);
     border-radius: 12px;
     font-size: 15px;
     }
 
 .overlay {
+    font-family: "Madimi One", sans-serif;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.8);
@@ -71,7 +78,7 @@ footer {
 .btn-buka {
     background: pink;
     border: none;
-    padding: 15px 25px;
+    padding: 25px 25px;
     border-radius: 12px;
     font-size: 20px;
     cursor: pointer;
