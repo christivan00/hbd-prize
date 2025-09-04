@@ -1,0 +1,90 @@
+body {
+
+    background-color: rgb(246, 242, 244);
+    margin: 20px;
+    padding: 1px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    }
+
+a {
+    text-decoration: none; 
+    color: inherit;      
+    }
+
+.chard {
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 1s ease forwards;
+    }
+
+.ssp {
+    font-family: "Madimi One", sans-serif;
+    height: auto;
+    background-color: rgb(250, 152, 168);
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    }
+
+.ssp:active {
+    transform: scale(0.9);
+    background-color: rgb(255, 98, 137); 
+    }
+
+.judul {
+    height: 50px;
+    text-align: center;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;  
+    display: block;
+    margin: 0 auto;
+    }
+
+footer {
+    margin-top: 60px;
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(28, 28, 28, 0.127);
+    color: white;
+    border-radius: 12px;
+    font-size: 15px;
+    }
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    }
+
+.btn-buka {
+    background: pink;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+
+.btn-buka:hover {
+    background: rgb(255, 98, 137);
+    color: white;
+    }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }

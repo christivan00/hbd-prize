@@ -3,88 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Surprise</title>
+</head>
+<body>
+    <!-- Musik -->
+    <audio id="bg-music" loop>
+        <source src="piano.mp3" type="audio/mpeg">
+    </audio>
 
-    <style>
-        body {
-        background-color: rgb(255, 223, 239);
-        margin: 20px;
-        padding: 1px;
-        }
+    <!-- Halaman pembuka -->
+    <div class="overlay" id="overlay">
+        <h1>🎉 Ada surprise buat kamu 🎉</h1>
+        <button class="btn-buka" onclick="openSurprise()">Buka</button>
+    </div>
 
-        a {
-        text-decoration: none; 
-        color: inherit;      
-        }
-
-
-        .chard {
-        display: flex;
-        flex-direction: column;
-        
-        }
-
-        .ssp {
-        height: auto;
-        background-color: rgb(250, 152, 168);
-        text-align: center;
-        color: white;
-        border-radius: 12px;
-        }
-
-        .ssp:active {
-        transform: scale(0.9);   /* mengecil sedikit */
-        background-color: rgb(255, 98, 137); /* warna lebih gelap */
-        }
-
-
-        .judul {
-        height: 50px;
-        text-align: center;
-        }
-
-        img {
-        max-width: 100%; /* jangan lebih lebar dari layar */
-        height: auto;    /* tinggi menyesuaikan biar nggak gepeng */
-        display: block;
-        margin: 0 auto;
-        }
-
-        @media only screen 
-        and (min-device-width: 414px) 
-        and (max-device-width: 414px)
-        and (orientation: portrait) {
-            body {
-            background-color: lightblue;
-            }
-        }
-        footer {
-        margin-top: 60px;
-        padding: 1px;
-        text-align: center;
-        background-color: rgba(28, 28, 28, 0.127);
-        color: white;
-        border-radius: 12px;
-        font-size: 15px;
-        }
-
-    </style>
-    </head>
-
-    <body>
-    <div class="chard">
+    <!-- Konten utama -->
+    <div class="chard" id="main-content">
         <div class="gambar">
-            <img src="AULIA.png" alt="hbd CHARD">
+        <img src="AULIA.png" alt="hbd CHARD">
         </div>
-        <a href="https://example.com" target="_blank">
-            <div class="ssp">
-                <h1>surprise!</h1>
-            </div>
+        <a href="https://youtube.com/shorts/goTHHrYlAz8?si=DfYQwHqkrG2t-rcG" target="_blank">
+        <div class="ssp">
+            <h1>surprise</h1>
+        </div>
         </a>
     </div>
 
     <footer>
-        <p>by christivan | Dibuat dengan ❤️</p>
+        <p>by christivan</p>
     </footer>
+
+    <!-- Library untuk confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js\script.js"></script>
 </body>
 </html>
